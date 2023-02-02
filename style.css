@@ -1,0 +1,102 @@
+*{
+   padding: 0;
+   margin: 0; 
+}
+
+#game{
+width: 1916px;
+height: 600px;
+border: none
+}
+#caracters{
+    width: 100px;
+    height: 220px;
+    position: relative;
+    top: 0px;
+}
+#caracter{
+width: 50px;
+height: 110px;
+position: relative;
+top: 390px;
+}
+
+.animate{
+    animation: jump 500ms ;
+}
+
+#apa{
+ width: 60px;
+ height: 70px;
+ position: relative;
+ top: 175px;
+ left: 1000px;
+ animation:apa 4s infinite linear ;
+}
+
+@keyframes apa {
+    0% {left: 930px;}
+    100% {left: -200px;}
+}
+
+@keyframes jump {
+    0%  {top: 390px;}
+    30% {top:320px}
+    70% {top: 320px}
+    100%{top: 390px}
+}
+
+#piva{
+ width: 70px;
+ height: 70px;
+ position: relative;
+ top: 210px;
+ left: 460px;
+ animation:piva 2.5s infinite linear;
+}
+
+@keyframes piva {
+    0%{left: 930px}
+    100%{left:-100px}
+}
+
+
+#scor{
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+h1{
+    font-family: pixel;
+    font-size: 50px;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(PIXEL-LI.TTF);
+}
+
+#restart{
+    position:absolute;
+    margin-top: 80px;
+    margin-left: 260px;
+}
+
+#restartButton{
+    position:absolute;
+    height: 60px;
+    width: 150px;
+    margin-top: 120px;
+    margin-left: 285px;   
+}
+
+.cadere{
+    left: 280px;
+    padding-top: 260px;
+    transform: rotate(90deg);
+    position: absolute;   
+}
+
